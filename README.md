@@ -96,9 +96,9 @@ Step 7 : Random Drink Purchasing
 * Add five diet colas (Price: 120 yen, Name: "Diet Cola") to the drink stock
 * Add five bottles of green tea (Price: 120 yen, Name: "Green Tea") to the drink stock
 * Add a random purchase button
- * Pressing the random purchase button buys one of cola, diet cola or green tea.
-  * When none of the random purchase drinks is available, behave the same as when there are no normal drinks
-  * When there is enough money inserted and enough stock available, "Random" should be added to the list of drinks available. (i.e. If 120 yen is inserted and there are tea and cola available, the available drinks list should contain "Cola", "Green Tea" and "Random").
+  * Pressing the random purchase button buys one of cola, diet cola or green tea.
+    * When none of the random purchase drinks is available, behave the same as when there are no normal drinks
+    * When there is enough money inserted and enough stock available, "Random" should be added to the list of drinks available. (i.e. If 120 yen is inserted and there are tea and cola available, the available drinks list should contain "Cola", "Green Tea" and "Random").
 
 Further Problems to Attempt if Progress Allows
 ==============================================
