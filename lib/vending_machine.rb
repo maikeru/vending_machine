@@ -10,4 +10,8 @@ class VendingMachine
   def get_total_inserted
     @total_inserted
   end
+
+  def refund
+    get_total_inserted
+  end
 end
