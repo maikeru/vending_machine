@@ -27,11 +27,11 @@ describe VendingMachine do
       machine.refund.must_equal "Refund: #{DENOMINATIONS.reduce(:+)}"
     end
   end
+
   describe "when invalid money is inserted" do
     it "doesn't increase the total" do
-      machine.insert_money 10
       machine.insert_money 5
-      machine.get_total_inserted.must_equal 10
+      machine.get_total_inserted.must_equal 0
     end
 
     it "refunds the money" do
