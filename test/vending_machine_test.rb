@@ -1,8 +1,9 @@
 require 'minitest/autorun'
 require_relative '../lib/vending_machine'
+DENOMINATIONS = [10, 50, 100, 500, 1000]
 
 describe VendingMachine do
-  [10, 50, 100, 500, 1000].each do |denomination|
+  DENOMINATIONS.each do |denomination|
     describe "when #{denomination} is inserted" do
       machine = VendingMachine.new
       it 'returns the value inserted' do
@@ -13,7 +14,7 @@ describe VendingMachine do
   describe "when multiple denominations are inserted" do
     it 'returns the total for all the denominations' do
       machine = VendingMachine.new
-      [10, 50, 100, 500, 1000].each do |denomination|
+      DENOMINATIONS.each do |denomination|
         machine.insert_money(denomination)
       end
       machine.get_total_inserted.must_equal 1660
